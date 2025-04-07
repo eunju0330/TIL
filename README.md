@@ -25,6 +25,5 @@
 * `git add .` 스테이징 업로드
 * `git commit -m '메세지'` 
 * `git push origin main` 저장소업로드
-### (위 이어서)
-다른 환경에서 git 이어서 작업하기(학원)
-* git pull origin main` 집에서 올린 파일 내려받기
+### (위 이어서) 다른 환경에서 git 이어서 작업하기(학원)
+* `git pull origin main` 집에서 올린 파일 내려받기
