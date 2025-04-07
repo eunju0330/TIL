@@ -24,4 +24,4 @@
 * `git status` 로 저장 안 된 파일 확인하기
 * `git add .` 로 저장
 * `git commit -m '메시지` 수정 파일에 대한 기록 메세지 작성
-* `git push add origin` 으로 gitHub에 저장하기
+* `git push origin main` 으로 gitHub에 저장하기
