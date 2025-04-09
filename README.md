@@ -43,5 +43,5 @@
 ### 링크 복습
 * <a href="#"></a> - 임시링크(연결페이지 제작 전일 경우)
 * <a href="#header"></a> - 바로가기링크(같은 파일 내 다른 위치 이동)
-* <a href="./basic/index.html"></a> - 상대경로 링크 / html로 이동하는 링크
+* <a href="./basic/index.html"></a> - 상대경로링크 / html로 이동하는 링크
 * <a href="./basic/index.html#main"></a> - 상대경로링크(다른파일의 다른위치로 가는 것)+바로가기링크(같은 파일 내 다른 위치 이동) / html로 이동할때 특정 id 위치로 이동까지 되는 링크
