@@ -1,10 +1,18 @@
-#weather {}
-#weather h1 {}
-#weather .area {}
-#weather .temperature {}
-#weather p {}
-#weather .sub_title {}
-#weather .humidity {}
-#weather .sub_title {}
-#weather .dust {}
-#weather .result {}
+#weather {background-color:#ddd;}
+#weather h1 {background-color:skyblue; color:blueviolet;}
+#weather .area {color:blue;}
+#weather .temperature {color:red;}
+#weather p {color:green;}
+#weather .sub_title {background-color: violet;}
+#weather .humidity {color:cornflowerblue;}
+#weather .sub_title {color:000;}
+#weather .dust {color:darkblue;}
+#weather .result {color:#000;}
+#news {background-attachment:#ddd;}
+#news > a {color:red;}
+#news .box {background-color: blanchedalmond;}
+#news .box a {color:red;}
+#news .box a h2 {color:#000;}
+#news .box a p {color:blue;}
+#news p {color:green;}
+#news p span {color:red;}
