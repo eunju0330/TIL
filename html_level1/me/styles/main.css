@@ -1,9 +1,68 @@
-#mobile_wrap {background-color:#FFA2A2;}
-#mobile_wrap .photo {}
-#mobile_wrap .photo img {}
-#mobile_wrap h1 {}
-#mobile_wrap h1 span {}
-#mobile_wrap h2 {}
-#mobile_wrap .git {}
-#mobile_wrap .skill {}
-#mobile_wrap .skill li {}
+#mobile_wrap {
+    background-color:#FFA2A2; /* #mobile_wrap */
+    width:440px; height:956px; /* #mobile_wrap */
+    text-align:center; /* 자식,자손 정렬 */
+    font-family:'pretendard', sans-serif; /* 자식, 자손 글꼴 통일 */
+}
+#mobile_wrap .photo {
+    margin-top:110px;
+    margin-bottom:28px;
+    display:inline-block;
+}
+#mobile_wrap .photo img {
+}
+#mobile_wrap h1 {
+    /* 글꼴 부모 상속 상태 */
+    font-weight:400;
+    font-size:2.5rem;
+    line-height:1;
+    letter-spacing:-0.05rem;
+    color:#000;
+}
+#mobile_wrap h1 span {
+    /* 글꼴, 행간, 자간 상속상태 */
+    color:#fff;
+    font-weight:800;
+    font-size:2.5rem;
+    letter-spacing:-0.05rem;
+    margin-bottom:46px;
+}
+#mobile_wrap h2 {
+    margin-top:43px;
+    line-height: 1.8;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight:600;
+    font-size:1.125rem;
+    letter-spacing:-0.01rem;
+    width:226px; 
+    /* display:inline-block; */
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+#mobile_wrap .git {
+    width:226px;
+    /* display:inline-block; */
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    line-height: 1.8;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight:500;
+    font-size:1rem;
+    letter-spacing:-0.01rem;
+}
+#mobile_wrap .skill {
+}
+#mobile_wrap .skill li {
+    width:226px; 
+    /* display:inline-block; */
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight:500;
+    font-size:1rem;
+    letter-spacing:-0.01rem;
+    line-height:200%;
+}
