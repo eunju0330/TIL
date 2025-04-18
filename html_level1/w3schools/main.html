@@ -15,15 +15,11 @@
         <p>Welcome back! please enter your details.</p>
         <form action="#" method="post" id="login_frm">
             <h2>Email</h2><!-- dl 이나 dt를 적어도 된다. -->
-            <p>
-                <input type="text" name="user_email_id" placeholder="Enter your email or id"><!-- type="email" 가능 -->
-            </p>
-            <h2>password</h2>
-            <p>
-                <input type="text" name="user_password" placeholder="Enter your password">
-            </p>
+            <p class="user_in"><input type="email" name="user_email_id" placeholder="Enter your email or id"></p>
+            <h2>Password</h2>
+            <p class="user_in"><input type="password" name="user_pw" placeholder="Enter your password"></p>
             <h2>Forgot password</h2>
-            <p><button type="button" id="login_btn">login</button></p>
+            <p class="user_btn"><button type="button" id="login_btn">Login</button></p>
             <p><a href="#" class="login_google">Sign in with Google</a></p>
         </form>
             <p>Don’t have on account?<a href="#">sign up for free</a></p>

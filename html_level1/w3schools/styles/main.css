@@ -1,103 +1,81 @@
 #wrap {
     background-color:#0130A6;
     width:440px; height:956px;
-    padding-left:15px;
+    padding-left:15px; /* 여백은 padding으로 설정 */
     padding-right:15px;
-    padding-top:194px;
-    margin-bottom:90px;
 }
 #wrap h1 {
     color:#FF8C62;
-
-    margin-bottom:30px;
-    font-size:2.5rem;
-    font-weight:700;
+    padding-top:194px;
+    margin-bottom:15px;
+    font-size:2.5rem; /* 40px */
+    font-weight:700; /* bold */
 }
 #wrap > p {
     color:#fff;
-    font-weight:300;
 } /* #wrap 모든 자식 p */
 #wrap > h1+p {
     background-color:#0130A6;
+    margin-bottom:90px;
 } /* wrap의 h1 옆에 p */
-#wrap #login_frm {
-    background-color:#0130A6;
-    width:410px;
-}
+#wrap #login_frm {}
 #wrap #login_frm h2 {
     font-size:1.375rem;
     font-weight:600;
+    margin-bottom:15px;
     color:#fff;
-    margin-top:43px;
 }
 #wrap #login_frm p {
+}
+#wrap #login_frm p.user_in {margin-bottom:43px;}
+#wrap #login_frm p.user_btn {margin-bottom:20px;}
+#wrap #login_frm p input::placeholder {/* placeholder 속성선택자작성법 */
     font-size:0.875rem;
-    font-weight:300px;
+    font-weight:300;
+    color:#aaa;
 }
 #wrap #login_frm p input {
-    display:block;
-    width: 100%;
-    height: 44px;             
+    width:410px;
     padding-left:20px;
     padding-right:20px;
     padding-top:15px;
     padding-bottom:15px;
-    margin-top:15px;
-    font-weight:300;
-    border-radius:20px;
-    background-color:#fff;
-    color:#000;
-    font-size:0.875rem;
+    border-radius:100px;
     border:1px solid #FF8C62;
-}
-#wrap .btn_wrap {
-    width:300px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:left;
-}
-#wrap .btn_wrap a {
-    display:block;
-    text-align:center;
 }
 #wrap #login_frm p #login_btn {
     color:#FF8C62;
     background-color:#0130A6;
     border:1px solid #FF8C62;
-    width:100%;
-    height:44px;
-    line-height: 44px;
-    border-radius:20px;
-    font-size:0.875rem;
-    font-weight:600;
-    text-align: center;
-    margin-top:15px;
+    width:410px; 
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-weight:600; font-size:0.875rem;
+    border-radius:100px;
 }
 #wrap #login_frm p .login_google {
-    display: block;
-    width:100%;
-    height:44px;
-    line-height:44px;
-    background-color: #FF8C62;
-    color: #000;
-    text-align:center;
-    border-radius:22px;
-    font-size:0.875rem;
-    font-weight:600;
-    margin-top:15px;
+    width:410px; 
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-radius:100px;
+    background-color:#FF8C62; color:#000;
+    display:block; text-align:center;
+    font-weight:600; font-size:0.875rem;
 }
 #wrap #login_frm+p {
-    text-align: center;
-    font-size:0.75rem;
-    font-weight:300;
     color:#fff;
+    font-size:0.75rem;
+    letter-spacing:0;
+    font-weight:300;
+    text-align:center;
+    margin-top:190px;
+
 } /* #wrap의 login_frm 옆에 p */
 #wrap #login_frm+p a {
-    margin-left:5px;
-    margin-bottom:48px;
-    margin-top:133px;
-    font-size:0.75rem;
     font-weight:600;
-    display:inline-block;
     color:#FF8C62;
-}
+} 
