@@ -5,15 +5,16 @@
     text-align:center; /* 수평 가운데정렬 */
 }
 #wrap h1 {
-    padding-top:312px; /* 위쪽여백값 */
-    margin-bottom:81px; /* 아래쪽여백값 */
+    padding:312px 0 0; /* 위쪽여백값 */
+    margin:0 0 81px; /* 아래쪽여백값 */
 }
 #wrap h1 img {}
 #wrap .btn_wrap {
     width:300px;
     /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데 정렬하고 싶다면? */
-    margin-left:auto;
-    margin-right:auto;
+/*     margin-left:auto;
+    margin-right:auto; */
+    margin:0 auto;
     text-align:left; /* btn_wrap의 인라인 자식, 자손 왼쪽정렬 */
 }
 #wrap .btn_wrap a {
@@ -34,8 +35,9 @@
     border: 1px solid #fff;
     border-radius:20px;
     height:40px; line-height:40px;
-    margin-top:16px;
-    margin-bottom:16px;
+/*     margin-top:16px;
+    margin-bottom:16px; */
+    margin:16px 0;
     font-size:0.875rem;
 }
 #wrap .btn_wrap .pw_search {
