@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | Spotify</title>
+    <!-- 웹글꼴 Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/logo.png" alt="spotify"></a></h1>
+        <section>
+            <!-- 탭제목 -->
+            <div class="tab_title">
+                <a href="#" class="sign_in active"><span>sign in</span></a>
+                <a href="#" class="sign_up"><span>sign up</span></a>
+            </div>
+            <!-- 탭내용 -->
+            <div class="tab_container">
+                <!-- sign_in 클릭 시 열리는 내용 -->
+                <form action="#" method="post" id="login_frm">
+                    <div class="id_pw">
+                        <input type="text" name="user_name" placeholder="Username"> <!-- 입력에서 name은 전송되는 데이터 값이다. -->
+                        <input type="text" name="user_pw" placeholder="Password"> <!-- placeholder는 대소문자 지켜쓰기, name에 user 들어가는 게 좋음 -->
+                    </div>
+                    <p class="login_stay">
+                        <input type="checkbox" value="user_stay_on" name="user_stay" id="user_stay_on"> <!-- 선택에서 name은 그룹이다 -->
+                        <label for="user_stay_on">stay signed in</label> <!-- for는 id랑 일치하게 -->
+                    </p> <!-- 한줄이고 복잡하지 않아서 p사용함. div써도 괜찮긴 하지만 다양하게 쓰려고 사용 -->
+                    <div class="btn_search">
+                        <button type="submit" id="sign_in_btn">sign in</button>
+                        <a href="#" class="pw_search">Forget Password?</a>
+                    </div>
+                </form> <!-- 로그인할때 서버연결하는 것 -->
+                <!-- sign_up 클릭 시 열리는 내용 -->
+                <form action="#" method="post" id="join_frm"></form> <!-- 연습이라 여기는 안 적고 로그인만 적을 예정 -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
