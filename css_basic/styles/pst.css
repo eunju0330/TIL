@@ -11,7 +11,7 @@ html, body {height:300vh;/* 스크롤길이 */}
 .pst1 {position:relative;}
 .pst1 li {position:relative;}
 .pst1 li:nth-child(2) {
-    position:relative; /* 필수속성(현재위치기준) */
+    position:relative; /* 필수속성(현재위치기준)dd */
     left:20px; top:20px; /* 선택속성(이동하고 싶은 방향에 따라 지정) */
 }
 .pst li:nth-child(3) {
