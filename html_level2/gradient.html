@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient | CSS</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        .btn {
+            display:block;
+            border:1px solid #000;
+            width:400px; height:200px;
+        }
+        #btn1 {
+            /* gradient 사용 시 -color 없이 통합 background로 명령한다. */
+            background:linear-gradient(-90deg, #eee, rgba(255,0,0,0.5), #ff0, #9aff5f);
+            background-size:400%;
+            transition:all 1s;
+        }
+        #btn1:hover {
+            background-position:100% 0;
+        }
+        h1 {
+            text-transform:uppercase;
+            font-size:2.5rem;
+            font-weight:800;
+            background:linear-gradient(90deg, purple, darkblue, #555, brown);
+            width:max-content; /* or display:inline-block; -너비를 내용만큼 인식하겠다. */
+            /* gradient 색상을 글자에 적용하기 위한 방법(마스크 구조) */
+            color:transparent; /* 글자색 투명으로 세팅 */
+            background-clip:text; 
+            background-size:400%;
+            transition:all 0.5s;
+        }
+        h1:hover {
+            background-position-x:0;
+        }
+        h2 {
+            font-size:1.25rem;
+            font-weight:700;
+            background:linear-gradient(80deg,rgba(238, 174, 202, 1) 13%, rgba(255, 227, 161, 1) 43%, rgba(94, 255, 41, 1) 71%, rgba(148, 187, 233, 1) 93%);
+            width:max-content;
+            color:transparent;
+            background-clip:text;
+            background-size:400%;
+            transition:all 2s;
+        }
+        h2:hover {
+            background-position:100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn1" class="btn">Hover me!</button>
+    <h1>HTML & CSS & Javascript & figma & react</h1>
+    <h2>이 기기를 사용하는 다른 사용자가 내 활동을 볼 수 없으므로 비공개로 탐색할 수 있습니다.<br>방문하는 웹사이트와 Google을 비롯하여 해당 웹사이트에서 사용하는 서비스에서 데이터를 수집하는 방식은 변경되지 않습니다.</h2>
+</body>
+</html>
