@@ -18,16 +18,18 @@
             text-decoration:none; margin-left:30px; font-weight:800;
         }
         /* 메인 */
-        main {height:150vh; }
+        main {height:150vh;}
         main #visual {background:#26bad7; min-width:1200px; margin:0 auto; height:550px; position:relative;}
         main #visual #deco {position:relative; width:1200px; margin:0 auto;}
         main #visual #deco .obj {position:absolute;}
 
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
+            
         }
         main #visual #deco .obj2 {
             left:0; top:150px;
+            /* animation:scale 0.5s linear infinite alternate both; */
         }
         main #visual #deco .obj3 {
             left:100px; top:250px;
@@ -67,9 +69,25 @@
             text-align:center; background:#f1f1f1; color:#222;
         }
         main .category a.active {background:#26bad7; color:#fff;}
-
+        /* 애니메이션 호출 그룹 */
+        main #visual #deco .obj1,
+        main #visual #deco .obj3,
+        main #visual #deco .obj6 {animation:rotate 2s linear alternate infinite;}
+        main #visual #deco .obj5,
+        main #visual #deco .obj8 {animation:rotate 2s linear alternate-reverse infinite;}
+        main #visual #deco .obj2,
+        main #visual #deco .obj4,
+        main #visual #deco .obj7,
+        main #visual #deco .obj9 {animation:scale 2s linear alternate infinite;}
         /* 애니메이션 */
-
+        @keyframes scale {
+            from {transform:scale(1);}
+            to {transform:scale(1.2);}
+        }
+        @keyframes rotate {
+            from {transform:rotate(0);}
+            to {transform:rotate(20deg);}
+        }
     </style>
 </head>
 <body>
