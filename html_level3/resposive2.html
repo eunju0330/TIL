@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹2 | css</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        main {
+            width:100%;
+            /* max-width:1920px; */
+            min-width:320px;
+        }
+        main ul {
+            display:flex;
+            flex-flow:row wrap;
+            gap:6px;
+        }
+        main ul li {
+            /* 여백이 없을 경우 */
+            /* width:calc(100% / 4) */
+            /* 여백이 있는 경우 */
+            width:calc((100% - (6px * 3)) / 4);
+            height:500px;
+        }
+        main ul li:nth-child(odd) {background-color:pink;}
+        main ul li:nth-child(even) {background-color:greenyellow;}
+        @media screen and (max-width:1199px) {
+            /* main {min-width:720px;} */
+            main ul li {width:calc((100% - (6px * 2)) / 3);}
+        } /* media 720~1199 end */
+        @media screen and (max-width:719px) {
+            /* main {min-width:320px;} */
+            main ul li {width:calc((100% - (6px * 1)) / 2);}
+        } /* media 320~719 end */
+    </style>
+</head>
+<body>
+    <!-- 공통 여백(gap) 6px -->
+    <!-- 1200~1920 desktop (4열) -->
+    <!-- 720~1199 tablet (3열) -->
+    <!-- 320~719 mobile (2열) -->
+    <main>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+    </main>
+</body>
+</html>
