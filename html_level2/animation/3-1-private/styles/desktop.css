@@ -40,14 +40,18 @@ main .bg_wrap .bg {width:1400px; margin:0 auto;}
 main .bg_wrap .bg1 {
     height:100px; 
     background:url(../images/bg_cloud.png) repeat-x;
+    animation:sky 20s linear infinite;
 }
 main .bg_wrap .bg2 {
     height:200px; 
     background:url(../images/bg_city1.png) repeat-x;
+    background-size: 100%;
+    animation:fastcity 50s linear infinite;
 }
 main .bg_wrap .bg3 {
     height:100px; position:relative; top:-96px;
-    background:url(../images/bg_city2.png) repeat-x;
+    background:url(../images/bg_city2.png) repeat-x; 
+    animation:fastcity 15s linear infinite;
 }
 /* 메인제목 */
 main .txt {}
@@ -57,7 +61,19 @@ main .car {margin-top:150px; text-align:center; width:600px;}
 main .car #car {width:100%;}
 main .car #left_tire, main .car #right_tire {
     position:absolute; bottom:25px; width:67px;
+    animation:tire 1s linear infinite;
 }
 main .car #left_tire {left:102px;}
 main .car #right_tire {right:91px;}
-
+@keyframes tire {
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+@keyframes fastcity {
+    from {background-position-X:0;}
+    to {background-position-X:1400px;}
+}
+@keyframes sky {
+    from {transform:translateX(50px);}
+    to {transform:translateX(0);}
+}
