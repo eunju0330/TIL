@@ -29,6 +29,21 @@ main {
     top: 80px;
     text-align: center;
 }
+/* 좌/우 끊긴 배경 자연스럽게 처리하기 */
+main::before {
+    content:''; display:block;
+    width:50%; height:100%;
+    position:absolute; left:0; top:0;
+    background: linear-gradient(90deg, rgb(9,13,43), transparent);
+    z-index:20;
+}
+main::after {
+    content:''; display:block;
+    width:50%; height:100%;
+    position:absolute; right:0; top:0;
+    background:linear-gradient(-90deg, rgb(9,13,43), transparent);
+    z-index:20;
+}
 main > * {max-width:1400px; margin:0 auto;}
 /* 중첩순서 처리 배경(10) 그라디언트(20) 나머지(30) */
 main .bg_wrap {position:absolute; z-index:10;}
@@ -40,18 +55,18 @@ main .bg_wrap .bg {width:1400px; margin:0 auto;}
 main .bg_wrap .bg1 {
     height:100px; 
     background:url(../images/bg_cloud.png) repeat-x;
-    animation:sky 20s linear infinite;
+    animation:bg 50s linear infinite;
 }
-main .bg_wrap .bg2 {
+main .bg_wrap .bg2 {/* 먼 도시 */
     height:200px; 
     background:url(../images/bg_city1.png) repeat-x;
-    background-size: 100%;
-    animation:fastcity 50s linear infinite;
+    background-size:100%;
+    animation:bg 30s linear infinite;
 }
-main .bg_wrap .bg3 {
+main .bg_wrap .bg3 {/* 가까운 도시 */
     height:100px; position:relative; top:-96px;
     background:url(../images/bg_city2.png) repeat-x; 
-    animation:fastcity 15s linear infinite;
+    animation:bg 10s linear infinite;
 }
 /* 메인제목 */
 main .txt {}
@@ -65,15 +80,3 @@ main .car #left_tire, main .car #right_tire {
 }
 main .car #left_tire {left:102px;}
 main .car #right_tire {right:91px;}
-@keyframes tire {
-    from {transform:rotate(0);}
-    to {transform:rotate(360deg);}
-}
-@keyframes fastcity {
-    from {background-position-X:0;}
-    to {background-position-X:1400px;}
-}
-@keyframes sky {
-    from {transform:translateX(50px);}
-    to {transform:translateX(0);}
-}
