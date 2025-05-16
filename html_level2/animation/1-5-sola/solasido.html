@@ -23,25 +23,27 @@
             background-position:center;
             opacity:0; transition:opacity 0.5s;
         }
-        .slide_wrap .slide_c .slide1 {background-image:url(images/bg1.jpg); opacity:1; animation:s1 3.5s forwards;}
+        .slide_wrap .slide_c .slide1 {
+            background-image:url(images/bg1.jpg); opacity:1; animation:bg 5s both;
+        }
         .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg);}
         .slide_wrap .slide_c .slide3 {background-image:url(images/bg3.jpg);}
         .slide_wrap .slide_c .slide p {
             text-align:center; color:#fff;
             font-size:3rem; letter-spacing:-1px;
             position:relative; top:400px;
-            animation:sp 1.5s ease-out forwards; 
+            animation:txt 1.5s both;
         }
         /* class */
 
         /* animation */
-        @keyframes sp { /*  */
-            from{transform:translateY(0); opacity:0; scale:0;}
-            to{transform:translateY(-40px); opacity:1; scale:1;}
+        @keyframes txt { /*  */
+            from{opacity:0; transform:scale(0.8) translateY(20px);}
+            to{opacity:1; transform:scale(1) translateY(0px);}
         }
-        @keyframes s1 {
-            from{transform:scale(1);}
-            to{transform:scale(1.2);}
+        @keyframes bg {
+            from{background-size:100%;}
+            to{background-size:120%;}
         }
     </style>
     <script>
