@@ -1,0 +1,8 @@
+@media screen and (max-width:767px){
+    main .brand .brand_wrap .big {width:100%}
+    main .brand .brand_wrap .right {display:none;}
+    main .girl .list li {width: calc(100% / 3);}
+    main .girl .list li:nth-child(4),
+    main .girl .list li:nth-child(5),
+    main .girl .list li:nth-child(6) {display:none;}
+}

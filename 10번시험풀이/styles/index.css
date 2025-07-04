@@ -1,0 +1,63 @@
+main img {width:100%;}
+main img.like {width:24px;}
+main {
+    background:aqua;
+    width:1204px; 
+    max-width:1204px;
+    min-width:320px;
+    margin:0 auto;
+}
+main .brand {}
+main .brand h1 {}
+main .brand .brand_wrap {display:flex;}
+main .brand .brand_wrap .big {
+    width:460px; height:527px; margin-right:41px; overflow:hidden;
+    position:relative;
+}
+main .brand .brand_wrap .big a {}
+main .brand .brand_wrap .big .thumnail {}
+main .brand .brand_wrap .big .thumnail img {transform:translateX(-200px); width:auto; height:100%}
+main .brand .brand_wrap .big .like {
+    position:absolute; top:13px; right:12px;
+}
+main .brand .brand_wrap .big .like img {}
+main .brand .brand_wrap .right {width:699px;}
+main .brand .brand_wrap .right h2 {}
+main .brand .brand_wrap .right > p {margin-bottom:134px;}
+main .brand .brand_wrap .right .list {display:flex; gap:15px;}
+main .brand .brand_wrap .right .list li {width:223px;}
+main .brand .brand_wrap .right .list li a:nth-child(1) {}
+main .brand .brand_wrap .right .list li a:nth-child(1) img {}
+main .brand .brand_wrap .right .list li .brand {}
+main .brand .brand_wrap .right .list li .brand span {}
+main .brand .brand_wrap .right .list li .brand .like {}
+main .brand .brand_wrap .right .list li .brand .like img {}
+main .brand .brand_wrap .right .list li h3 {}
+main .brand .brand_wrap .right .list li .sale_price {}
+main .brand .brand_wrap .right .list li .sale_price span {}
+main .brand .brand_wrap .right .list li .sale_price span:nth-child(1) {}
+main .brand .brand_wrap .right .list li .sale_price span:nth-child(2) {}
+main .girl {}
+main .girl .title {}
+main .girl .title h1 {}
+main .girl .title .more {}
+main .girl .list {display:flex;}
+main .girl .list li {
+    width: calc((100% - ((6 - 1) * 5.8px)) / 6);
+    margin-right:5.8px;
+}
+main .girl .list li:last-child {
+    margin-right:0px;
+}
+main .girl .list li a {}
+main .girl .list li a:nth-child(1) {}
+main .girl .list li a:nth-child(1) img {}
+main .girl .list li .brand {}
+main .girl .list li .brand span {}
+main .girl .list li .brand .like {}
+main .girl .list li .brand .like img {}
+main .girl .list li h3 {}
+main .girl .list li .sale_price {}
+main .girl .list li .sale_price span {}
+main .girl .list li .sale_price span:nth-child(1) {}
+main .girl .list li .sale_price span:nth-child(2) {}
